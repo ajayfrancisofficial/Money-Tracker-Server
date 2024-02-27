@@ -11,7 +11,7 @@ mtServer.use(express.json())
 
 mtServer.use(router)
 
-const PORT=3000
+const PORT=3000 || process.env.PORT
 mtServer.listen(PORT,()=>{
     console.log(`Server started at port${PORT}`);
 })
